@@ -1,0 +1,114 @@
+.process{
+  background:url(../assets/calculation.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__bg{
+    background: rgba(8, 14, 38, 0.65);
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+  @include flex-center;
+  }
+
+
+  .process-section {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    animation: fadeIn 1s ease-in-out;
+    
+  }
+  
+  h1 {
+    font-size: 2.4em;
+    margin-bottom: 1em;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Process Container Styling */
+  .process-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    margin-top: 2em;
+  }
+  
+  .process-item {
+    background: $bg-th;
+    border-radius: 12px;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #e6e8ec;
+  }
+  
+  .process-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Step Marker Styling */
+  .process-marker {
+    background: linear-gradient(135deg, #3d2d5f, #5a4b8c);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1em;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .process-item:hover .process-marker {
+    background: linear-gradient(135deg, #5a4b8c, #3d2d5f);
+  }
+  
+  .process-item h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 0.8em;
+  }
+  
+  .process-item p {
+    font-size: 0.95em;
+    color: #c2c6cf;
+    line-height: 1.5;
+    margin: 0.5em 0;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .process-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .process-item {
+      max-width: 90%;
+      margin-bottom: 1.5em;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

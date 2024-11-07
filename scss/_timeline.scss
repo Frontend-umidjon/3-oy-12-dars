@@ -1,0 +1,121 @@
+.timeline-section {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: $bg-sy;
+  
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #f0f4fa;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timeline-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 80px;
+    gap: 2em;
+  }
+  
+  
+  
+  .timeline-item {
+    position: relative;
+    width: 220px;
+    padding: 20px;
+    background-color: #2b2f4a;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 30px
+  }
+  
+  .timeline-item:hover {
+    transform: scale(1.05);
+    background-color: #3a3f5e;
+  }
+  
+  .timeline-item h2 {
+    font-size: 1.3em;
+    color: #f0f4fa;
+    margin-bottom: 0.5em;
+  }
+  
+  .timeline-item p {
+    font-size: 0.9em;
+    color: #c8ccd8;
+    margin: 0.5em 0;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6a7b9d;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #1a1e3d;
+    z-index: 2;
+  }
+  
+  .step-number {
+    font-size: 1.2em;
+    color: #eaeef2;
+    font-weight: bold;
+  }
+  
+  /* Accent Color for Each Timeline Step */
+  .timeline-item:nth-child(1) .timeline-marker {
+    background-color: #8e44ad;
+  }
+  
+  .timeline-item:nth-child(2) .timeline-marker {
+    background-color: #3498db;
+  }
+  
+  .timeline-item:nth-child(3) .timeline-marker {
+    background-color: #e67e22;
+  }
+}
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .timeline-item {
+      width: 100%;
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .timeline-container {
+      flex-direction: column;
+    }
+  
+    .timeline-item {
+      width: 90%;
+    }
+  
+    .timeline-container::before {
+      height: 100%;
+      width: 3px;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  
+    .timeline-marker {
+      left: 50%;
+    }
+  }

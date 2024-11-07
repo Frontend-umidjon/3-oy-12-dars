@@ -1,0 +1,98 @@
+.header{
+    background: $bg-sy;
+    width: 100%;
+
+    .navbar{
+        @include flex-between;
+        padding: 24px 0;
+        &__logo{
+            img{
+                width: 80px;
+            }
+        }
+        &__hamburger{
+            display: none;
+            cursor: pointer;
+            text-align: center;
+            padding: 16px;
+            i{
+                color: $main-text-color;
+            }
+        }   
+        &__list{
+            @include flex-center;
+            gap: 32px;
+        }
+        &__submenu{
+            position: absolute;
+            top: 100%;
+            left: -10px;
+            background: #00000099;
+            display: none;
+            z-index: 1;
+            padding: 16px;
+            transition: all .3s ease-in-out;
+        }
+        &__item{
+            position: relative;
+            .navbar__link{
+                font-size: 20px;
+                color: $main-text-color;
+                text-decoration: none;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: $bg-py;
+
+                }
+                
+            }
+            &:hover i {
+                    
+                transform: rotate(180deg);
+                transition: all .3s ease-in-out;
+
+            }
+            i{
+                color: $main-text-color;
+                transition: all .3s ease-in-out;
+            }
+            .navbar__subitem{
+                margin-bottom: 12px;
+                text-align: center;
+                .navbar__sublink{
+                    color: $main-text-color;
+                    text-decoration: none;
+                    font-size: 16px;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        color: $bg-py;
+                    }
+                }
+            }
+            &:hover .navbar__submenu{
+                display: block;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        .navbar{
+            &__list{
+                display: none;
+            }
+            &__hamburger{
+                display: block;
+            }
+            &__logo{
+                img{
+                    width: 100px;
+                }
+            }
+
+        }
+    }
+    
+}

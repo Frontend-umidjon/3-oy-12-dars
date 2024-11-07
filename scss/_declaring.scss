@@ -1,0 +1,33 @@
+.declaring{
+    background-color: $bg-sy;
+    padding: 60px 0;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__title{
+        color: $main-text-color;
+        font-size: 48px;
+        line-height: 1.5;
+    }
+    &__list{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 120px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: $main-text-color;
+        &-title{
+            font-size: 24px;
+        }
+        &-description{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}

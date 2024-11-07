@@ -1,0 +1,70 @@
+.constructing{
+    background: $bg-py;
+    padding: 60px 0;
+    &__title{
+        color: $bg-sy;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: 600;
+
+    }
+    &__list{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: $bg-sy;
+        font-weight: 550;
+        max-width: 360px;
+        padding: 12px 18px;
+        &-title{
+            font-size: 24px;
+        }
+        &-description{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .constructing{
+        &__list{
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+
+        }
+        &__title{
+            font-size: 32px;
+        }
+        &__item{
+            font-size: 16px;
+        }
+        &__item:nth-child(3){
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+            width: 100%;
+        }
+
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    .constructing{
+        &__title{
+            font-size: 24px;
+        }
+        &__list{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+}

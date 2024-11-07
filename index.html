@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions and Date</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <span class="navbar__logo" data-aos="fade-right" data-aos-duration="2500">
+                    <a href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
+                </span>
+                <ul class="navbar__list">
+                    <li class="navbar__item" data-aos="fade-down" data-aos-duration="1500">
+                        <a href="./index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+                        <a href="./date.html" class="navbar__link">Date <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="navbar__submenu">
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Introduction</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Constructing</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Manipulating</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Formatting</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Calculations</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+                        <a href="./functions.html" class="navbar__link">Functions <i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <ul class="navbar__submenu">
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Introduction</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Declaring</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a href="./date.html" class="navbar__sublink">Parameters</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="800">
+                        <a href="./index.html" class="navbar__link">Conclusion</a>
+                    </li>
+                </ul>
+                <div class="navbar__hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__bg">
+                <div class="container">
+                    <div class="hero__content">
+                        <h1 class="hero__title" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                            Mastering JavaScript: Functions and Dates</h1>
+                        <p class="hero__description" data-aos="fade-right" data-aos-duration="1500"
+                            data-aos-delay="600">Dive into the powerful world of JavaScript functions and date
+                            manipulation, unlocking new possibilities for your web applications.</p>
+                        <div class="hero__actions">
+                            <a href="" class="hero__link" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-delay="400">Learn More</a>
+                            <a href="" class="hero__link" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-delay="600">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- INTRODUCTION -->
+        <section class="introduction">
+            <div class="container">
+                <div class="introduction__content">
+                    <h2 class="introduction__title">Understanding the Date Object</h2>
+                    <div class="introduction__list">
+                        <div class="introduction__item">
+                            <i class="fa-regular fa-calendar"></i>
+                            <h3 class="introduction__item-title">Calendar</h3>
+                            <p class="introduction__item-description">The Date object represents a single point in time,
+                                including the date and time.</p>
+                        </div>
+                        <div class="introduction__item">
+                            <i class="fa-regular fa-clock"></i>
+                            <h3 class="introduction__item-title">Time</h3>
+                            <p class="introduction__item-description">It provides access to various date and time components, such as year, month, day, hour, minute, and second.</p>
+                        </div>
+                        <div class="introduction__item">
+                            <i class="fa-solid fa-timeline"></i>
+                            <h3 class="introduction__item-title">Time Zones</h3>
+                            <p class="introduction__item-description">Dates can be represented in different time zones, allowing for global application support.</p>
+                        </div>
+                        <div class="introduction__item">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <h3 class="introduction__item-title">Timestamps</h3>
+                            <p class="introduction__item-description">Dates are stored internally as a timestamp, the number of milliseconds since January 1, 1970.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction__image">
+                    <img src="./assets/basics.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- CONSTRUCTING -->
+        <section class="constructing">
+            <div class="container">
+                <div class="constructing__title">
+                    Constructing Date Objects
+                </div>
+                <div class="constructing__list">
+                    <div class="constructing__item">
+                        <h2 class="constructing__item-title">
+                            New Date()
+                        </h2>
+                        <p class="constructing__item-description">
+                            Create a Date object representing the current date and time.
+                        </p>
+                    </div>
+                    <div class="constructing__item">
+                        <h2 class="constructing__item-title">
+                            New Date(value)
+                        </h2>
+                        <p class="constructing__item-description">
+                            Create a Date object from a timestamp or date string.
+                        </p>
+                    </div>
+                    <div class="constructing__item">
+                        <h2 class="constructing__item-title">
+                            New Date(year, month, day, hour, minute, second, millisecond)
+                        </h2>
+                        <p class="constructing__item-description">
+                            Create a Date object with specific date and time components.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- TIMELINE -->
+        <section class="timeline-section">
+           <div class="container">
+            <h1>Manipulating Date and Time</h1>
+            <div class="timeline-container">
+              <!-- First Step -->
+              <div class="timeline-item">
+                <h2>Get Date Components</h2>
+                <p>Access individual date and time components using <code>getFullYear()</code>, <code>getMonth()</code>, <code>getDate()</code>, etc.</p>
+                <div class="timeline-marker">
+                  <span class="step-number">1</span>
+                </div>
+              </div>
+        
+              <!-- Second Step -->
+              <div class="timeline-item">
+                <h2>Set Date Components</h2>
+                <p>Modify date and time components using <code>setFullYear()</code>, <code>setMonth()</code>, <code>setDate()</code>, etc.</p>
+                <div class="timeline-marker">
+                  <span class="step-number">2</span>
+                </div>
+              </div>
+        
+              <!-- Third Step -->
+              <div class="timeline-item">
+                <h2>Timestamp Manipulation</h2>
+                <p>Perform calculations on the timestamp, such as adding or subtracting days, hours, or milliseconds.</p>
+                <div class="timeline-marker">
+                  <span class="step-number">3</span>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+        <!-- FORMATTING -->
+        <section class="formating">
+            <div class="container">
+                <div class="formating__image">
+                    <img src="./assets/date.png" alt="">
+                </div>
+                <div class="formating__content">
+                    <div class="formating__title">
+                        Formatting Date and Time
+                    </div>
+                    <div class="formating__list">
+                        <div class="formating__item">
+                            <details>
+                                <summary>
+                                    Converting Dates to Strings
+                                </summary>
+                                <summary>
+                                    Use the toLocaleString(), toLocaleDateString(), and toLocaleTimeString() methods to format dates and times for display.
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    Parsing Date Strings
+                                </summary>
+                                <summary>
+                                    The Date constructor can parse a variety of date and time formats, including ISO 8601, YYYY-MM-DD, and more.
+                                </summary>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROCESS -->
+       <section class="process">
+       <div class="process__bg">
+        <div class="process-section">
+            <div class="container">
+                <h1>Date Calculations and Comparisons</h1>
+            <div class="process-container">
+              <div class="process-item">
+                <div class="process-marker">1</div>
+                <h2>Date Arithmetic</h2>
+                <p>Perform date and time calculations, such as finding the difference between two dates or adding/subtracting time intervals.</p>
+              </div>
+              <div class="process-item">
+                <div class="process-marker">2</div>
+                <h2>Date Comparisons</h2>
+                <p>Compare dates using greater than, less than, and equality operators to determine the chronological order of events.</p>
+              </div>
+              <div class="process-item">
+                <div class="process-marker">3</div>
+                <h2>Time Intervals</h2>
+                <p>Use the getTime() method to retrieve the timestamp and calculate time differences in milliseconds.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+       </div>
+       </section>
+       <!-- Functions -->
+        <section class="functions">
+            <div class="container">
+                <img src="./assets/function.png" alt="">
+                <div class="functions__content">
+                    <h2 class="functions__title">
+                        Functions in JavaScript
+                    </h2>
+                    <div class="functions__list">
+                        <div class="functions__item">
+                            <span class="functions__item-number">1</span>
+                            <div class="functions__item-content">
+                                <h2 class="functions__item-title">
+                                    Reusable Code
+                                </h2>
+                                <p class="functions__item-description">
+                                    Functions allow you to encapsulate and reuse blocks of code, improving code organization and maintainability.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="functions__item">
+                            <span class="functions__item-number">2</span>
+                            <div class="functions__item-content">
+                                <h2 class="functions__item-title">
+                                    Abstraction
+                                </h2>
+                                <p class="functions__item-description">
+                                    Functions provide a layer of abstraction, hiding complexity and exposing a simplified interface for other parts of your code.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="functions__item">
+                            <span class="functions__item-number">3</span>
+                            <div class="functions__item-content">
+                                <h2 class="functions__item-title">
+                                    Modularity
+                                </h2>
+                                <p class="functions__item-description">
+                                    By breaking your code into smaller, focused functions, you can achieve a modular design that promotes flexibility and testability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Declaring -->
+         <section class="declaring">
+            <div class="container">
+                <div class="declaring__content">
+                    <h2 class="declaring__title">
+                        Declaring and Invoking Functions
+                    </h2>
+                    <div class="declaring__list">
+                        <div class="declaring__item">
+                            <h2 class="declaring__item-title">Function Declaration</h2>
+                            <p class="declaring__item-description">The traditional way to define a function, using the "function" keyword followed by the function name.</p>
+                        </div>
+                        <div class="declaring__item">
+                            <h2 class="declaring__item-title">Function Expression</h2>
+                            <p class="declaring__item-description">Assigning a function to a variable, allowing for more flexibility and advanced usage.</p>
+                        </div>
+                        <div class="declaring__item">
+                            <h2 class="declaring__item-title">Invoking Functions</h2>
+                            <p class="declaring__item-description">Calling a function by its name, with optional arguments passed inside the parentheses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+    </main>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

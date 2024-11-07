@@ -1,0 +1,84 @@
+.introduction{
+    padding: 50px 0;
+    background-color: $bg-sy;
+    .container{
+        display: flex;
+        
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    &__title{
+        color: $main-text-color;
+        font-size: 48px;
+        line-height: 1.5;
+        max-width: 515px;
+    }
+    &__list{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        color: $main-text-color;
+        &-title{
+            font-size: 24px;
+        }
+        &-description{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+    &__image{
+        img{
+            width: 500px;
+        }
+    }
+    i{
+        color: $bg-py;
+        font-size: 48px;
+    }
+    
+
+
+}
+
+@media (max-width: 1024px) {
+    .introduction{
+
+        &__image{
+            img{
+                width: 400px;
+            }   
+        }
+            
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .introduction{
+
+        .container{
+            flex-direction: column;
+        }
+        &__list{
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+        }
+        &__image{
+            img{
+                width: 100%;
+            }
+        }
+        &__title{
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+    
+}
