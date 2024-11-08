@@ -11,6 +11,8 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/knowledege.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
@@ -92,47 +94,47 @@
             </div>
         </section>
         <!-- INTRODUCTION -->
-        <section class="introduction">
+        <section class="introduction" id="introduction">
             <div class="container">
                 <div class="introduction__content">
-                    <h2 class="introduction__title">Understanding the Date Object</h2>
+                    <h2 class="introduction__title"  data-aos="fade-right" data-aos-duration="1500">Understanding the Date Object</h2>
                     <div class="introduction__list">
-                        <div class="introduction__item">
+                        <div class="introduction__item"  data-aos="fade-down-right" data-aos-duration="1500">
                             <i class="fa-regular fa-calendar"></i>
                             <h3 class="introduction__item-title">Calendar</h3>
                             <p class="introduction__item-description">The Date object represents a single point in time,
                                 including the date and time.</p>
                         </div>
-                        <div class="introduction__item">
+                        <div class="introduction__item" data-aos="fade-down-left" data-aos-duration="1500">
                             <i class="fa-regular fa-clock"></i>
                             <h3 class="introduction__item-title">Time</h3>
                             <p class="introduction__item-description">It provides access to various date and time components, such as year, month, day, hour, minute, and second.</p>
                         </div>
-                        <div class="introduction__item">
+                        <div class="introduction__item" data-aos="fade-up-right" data-aos-duration="1500">
                             <i class="fa-solid fa-timeline"></i>
                             <h3 class="introduction__item-title">Time Zones</h3>
                             <p class="introduction__item-description">Dates can be represented in different time zones, allowing for global application support.</p>
                         </div>
-                        <div class="introduction__item">
+                        <div class="introduction__item" data-aos="fade-up-left" data-aos-duration="1500">
                             <i class="fa-solid fa-stopwatch"></i>
                             <h3 class="introduction__item-title">Timestamps</h3>
                             <p class="introduction__item-description">Dates are stored internally as a timestamp, the number of milliseconds since January 1, 1970.</p>
                         </div>
                     </div>
                 </div>
-                <div class="introduction__image">
+                <div class="introduction__image" data-aos="flip-left" data-aos-duration="1500">
                     <img src="./assets/basics.png" alt="">
                 </div>
             </div>
         </section>
         <!-- CONSTRUCTING -->
-        <section class="constructing">
+        <section class="constructing" id="constructing">
             <div class="container">
-                <div class="constructing__title">
+                <div class="constructing__title" data-aos="fade-right" data-aos-duration="1200">
                     Constructing Date Objects
                 </div>
                 <div class="constructing__list">
-                    <div class="constructing__item">
+                    <div class="constructing__item" data-aos="flip-up" data-aos-duration="800">
                         <h2 class="constructing__item-title">
                             New Date()
                         </h2>
@@ -140,7 +142,7 @@
                             Create a Date object representing the current date and time.
                         </p>
                     </div>
-                    <div class="constructing__item">
+                    <div class="constructing__item" data-aos="flip-up" data-aos-duration="800"> 
                         <h2 class="constructing__item-title">
                             New Date(value)
                         </h2>
@@ -148,7 +150,7 @@
                             Create a Date object from a timestamp or date string.
                         </p>
                     </div>
-                    <div class="constructing__item">
+                    <div class="constructing__item" data-aos="flip-up" data-aos-duration="800">
                         <h2 class="constructing__item-title">
                             New Date(year, month, day, hour, minute, second, millisecond)
                         </h2>
@@ -161,12 +163,12 @@
             </div>
         </section>
         <!-- TIMELINE -->
-        <section class="timeline-section">
+        <section class="timeline-section" id="timeline">
            <div class="container">
-            <h1>Manipulating Date and Time</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1500">Manipulating Date and Time</h1>
             <div class="timeline-container">
               <!-- First Step -->
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-up-right" data-aos-duration="1500">
                 <h2>Get Date Components</h2>
                 <p>Access individual date and time components using <code>getFullYear()</code>, <code>getMonth()</code>, <code>getDate()</code>, etc.</p>
                 <div class="timeline-marker">
@@ -175,7 +177,7 @@
               </div>
         
               <!-- Second Step -->
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-up" data-aos-duration="1500">
                 <h2>Set Date Components</h2>
                 <p>Modify date and time components using <code>setFullYear()</code>, <code>setMonth()</code>, <code>setDate()</code>, etc.</p>
                 <div class="timeline-marker">
@@ -184,7 +186,7 @@
               </div>
         
               <!-- Third Step -->
-              <div class="timeline-item">
+              <div class="timeline-item" data-aos="fade-up-left" data-aos-duration="1500">
                 <h2>Timestamp Manipulation</h2>
                 <p>Perform calculations on the timestamp, such as adding or subtracting days, hours, or milliseconds.</p>
                 <div class="timeline-marker">
@@ -195,18 +197,18 @@
            </div>
         </section>
         <!-- FORMATTING -->
-        <section class="formating">
+        <section class="formating" id="formating">
             <div class="container">
-                <div class="formating__image">
+                <div class="formating__image " data-aos="fade-right" data-aos-duration="1500">
                     <img src="./assets/date.png" alt="">
                 </div>
                 <div class="formating__content">
-                    <div class="formating__title">
+                    <div class="formating__title" data-aos="fade-up" data-aos-duration="1500">
                         Formatting Date and Time
                     </div>
                     <div class="formating__list">
                         <div class="formating__item">
-                            <details>
+                            <details data-aos="flip-up" data-aos-duration="1000">
                                 <summary>
                                     Converting Dates to Strings
                                 </summary>
@@ -214,7 +216,7 @@
                                     Use the toLocaleString(), toLocaleDateString(), and toLocaleTimeString() methods to format dates and times for display.
                                 </summary>
                             </details>
-                            <details>
+                            <details data-aos="flip-up" data-aos-duration="1000">
                                 <summary>
                                     Parsing Date Strings
                                 </summary>
@@ -228,12 +230,12 @@
             </div>
         </section>
         <!-- PROCESS -->
-       <section class="process">
+       <section class="process" id="process">
        <div class="process__bg">
         <div class="process-section">
             <div class="container">
-                <h1>Date Calculations and Comparisons</h1>
-            <div class="process-container">
+                <h1 data-aos="fade-down" data-aos-duration="1500">Date Calculations and Comparisons</h1>
+            <div class="process-container" data-aos="fade-up" data-aos-duration="1500">
               <div class="process-item">
                 <div class="process-marker">1</div>
                 <h2>Date Arithmetic</h2>
@@ -255,14 +257,14 @@
        </div>
        </section>
        <!-- Functions -->
-        <section class="functions">
+        <section class="functions" id="functions">
             <div class="container">
-                <img src="./assets/function.png" alt="">
+                <img src="./assets/function.png" alt="" data-aos="fade-right" data-aos-duration="1500">
                 <div class="functions__content">
-                    <h2 class="functions__title">
+                    <h2 class="functions__title" data-aos="fade-up" data-aos-duration="1500">
                         Functions in JavaScript
                     </h2>
-                    <div class="functions__list">
+                    <div class="functions__list" data-aos="fade-up" data-aos-duration="1500">
                         <div class="functions__item">
                             <span class="functions__item-number">1</span>
                             <div class="functions__item-content">
@@ -301,22 +303,22 @@
             </div>
         </section>
         <!-- Declaring -->
-         <section class="declaring">
+         <section class="declaring" id="declaring">
             <div class="container">
                 <div class="declaring__content">
-                    <h2 class="declaring__title">
+                    <h2 class="declaring__title" data-aos="fade-down" data-aos-duration="1500">
                         Declaring and Invoking Functions
                     </h2>
                     <div class="declaring__list">
-                        <div class="declaring__item">
+                        <div class="declaring__item" data-aos="flip-left" data-aos-duration="800">
                             <h2 class="declaring__item-title">Function Declaration</h2>
                             <p class="declaring__item-description">The traditional way to define a function, using the "function" keyword followed by the function name.</p>
                         </div>
-                        <div class="declaring__item">
+                        <div class="declaring__item" data-aos="flip-left" data-aos-duration="800">
                             <h2 class="declaring__item-title">Function Expression</h2>
                             <p class="declaring__item-description">Assigning a function to a variable, allowing for more flexibility and advanced usage.</p>
                         </div>
-                        <div class="declaring__item">
+                        <div class="declaring__item" data-aos="flip-left" data-aos-duration="800">
                             <h2 class="declaring__item-title">Invoking Functions</h2>
                             <p class="declaring__item-description">Calling a function by its name, with optional arguments passed inside the parentheses.</p>
                         </div>
@@ -324,13 +326,67 @@
                 </div>
             </div>
          </section>
-
+         <!-- Parameters -->
+         <section class="parameters" id="parameters">
+           <div class="parameters__bg">
+            <div class="container">
+                <h2 class="parameters__title" data-aos="fade-down" data-aos-duration="1500">Function Parameters and Arguments</h2>
+                <div class="parameters__list">
+                    <div class="parameters__item" data-aos="fade-up" data-aos-duration="1500">
+                        <h2 class="parameters__item-title">Parameters</h2>
+                        <p class="parameters__item-description">Placeholders defined in the function declaration that accept input values.</p>
+                    </div>
+                    <div class="parameters__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <h2 class="parameters__item-title">Arguments</h2>
+                        <p class="parameters__item-description">The actual values passed to the function when it is called, which are then assigned to the parameters.</p>
+                    </div>
+                    <div class="parameters__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <h2 class="parameters__item-title">Default Parameters</h2>
+                        <p class="parameters__item-description">Allowing parameters to have default values, making functions more flexible and robust.</p>
+                    </div>
+                    <div class="parameters__item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                        <h2 class="parameters__item-title">Rest Parameters</h2>
+                        <p class="parameters__item-description">Enabling a function to accept any number of arguments by using the "..." syntax.</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+         </section>
+         <!-- Conclusion -->
+         <section class="knowledege" id="knowledege">
+            <div class="container">
+                <h2 class="knowledege__title" data-aos="fade-down" data-aos-duration="1500">Conclusion</h2>
+                <div class="knowledege__list">
+                    <div class="knowledege__item"   data-aos="flip-left" data-aos-duration="1500">
+                        <img src="./assets/knowledege.png" alt="" class="knowledege__item-image">
+                        <h2 class="knowledege__item-title">Foundational Knowledge</h2>
+                        <p class="knowledege__item-description">This exploration of JavaScript fundamentals provides you with a robust foundation for building interactive web applications.</p>
+                    </div>
+                    <div class="knowledege__item" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="400">
+                        <img src="./assets/interactive.png" alt="" class="knowledege__item-image">
+                        <h2 class="knowledege__item-title">Interactive Possibilities</h2>
+                        <p class="knowledege__item-description">Mastering core principles unlocks the potential to create dynamic and engaging user experiences.</p>
+                    </div>
+                    <div class="knowledege__item" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="800">
+                        <img src="./assets/possibilities.png" alt="" class="knowledege__item-image">
+                        <h2 class="knowledege__item-title">Further Exploration</h2>
+                        <p class="knowledege__item-description">Continue your journey by delving into frameworks, libraries, and advanced techniques to expand your JavaScript skills.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
     </main>
-
-
-
-
-
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                &copy; 2024 Kengashev Umidjon. All rights reserved.
+            </p>
+            <p class="footer__text">
+                Coded by Kengashev Umidjon
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

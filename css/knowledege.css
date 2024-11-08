@@ -1,0 +1,48 @@
+.knowledege{
+    padding: 50px 0;
+    background-color: rgb(8, 14, 38);
+}
+.knowledege__title{
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.5;
+    max-width: 515px;
+}
+.knowledege__list{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.knowledege__item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #fff;
+}
+.knowledege__item-image{
+    width: 100%;
+}
+.knowledege__item-title{
+    font-size: 24px;
+}
+.knowledege__item-description{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .knowledege__list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .knowledege__title{
+        font-size: 32px;
+    }
+    
+}
+@media (max-width: 480px) {
+    .knowledege__title{
+        font-size: 24px;
+    }
+    
+}

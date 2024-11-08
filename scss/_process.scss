@@ -98,17 +98,10 @@
       max-width: 90%;
       margin-bottom: 1.5em;
     }
-  }
   
-  /* Animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
+    h1 {
+      font-size: 1.8em;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    
   }
 }
